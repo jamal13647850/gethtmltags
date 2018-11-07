@@ -16,3 +16,15 @@
     echo count($match);
 
 echo $match[0];
+
+    preg_match_all('#<li id="menu-item-[\d]+" class=".*?">.*?</li>#',$html,$match);
+    echo count($match);
+
+echo $match[0][0];
+echo $match[0][1];
+echo $match[0][2];
+echo $match[0][3];
+echo $match[0][4];
+echo $match[0][5];
+echo $match[0][6];
+echo $match[0][7];
